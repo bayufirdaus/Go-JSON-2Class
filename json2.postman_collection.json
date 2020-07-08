@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5f9cb521-2277-465d-8bf5-6de1dbbe30a2",
+		"name": "json2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8181/client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clients\":{\r\n      \"id\":\"59761c23b30d971669fb42ff\",\r\n      \"isActive\":\"true\",\r\n      \"age\":36,\r\n      \"name\":\"Dunlap Hubbard\",\r\n      \"gender\":\"male\",\r\n      \"company\":\"CEDWARD\",\r\n      \"email\":\"dunlaphubbard@cedward.com\",\r\n      \"phone\":\"+1 (890) 543-2508\",\r\n      \"address\":{\r\n         \"street\":\"6649 N Blue Gum St\",\r\n         \"city\":\"New Orleans\",\r\n         \"state\":\"LA\",\r\n         \"zip\":\"70116\"\r\n      }\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8181/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\":\"0001\",\r\n   \"type\":\"donut\",\r\n   \"name\":\"Cake\",\r\n   \"image\":{\r\n      \"url\":\"images/0001.jpg\",\r\n      \"width\":200,\r\n      \"height\":200\r\n   },\r\n   \"thumbnail\":{\r\n      \"url\":\"images/thumbnails/0001.jpg\",\r\n      \"width\":32,\r\n      \"height\":32\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
